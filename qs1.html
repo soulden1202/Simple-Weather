@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <style>
+      .center-cols > .col {
+        float: none; /* disable the float */
+        display: inline-block; /* make blocks inline-block */
+        text-align: initial; /* restore text-align to default */
+      }
+
+      .resize-img {
+        height: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content" class="container">
+      <div class="row">
+        <form id="search_form" class="col s12" onsubmit="return false;">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">search</i>
+              <input id="city_state" type="text" class="validate" />
+              <label for="city_state">Search</label>
+            </div>
+          </div>
+          <div id="div" class="row center">
+            <button
+              class="btn waves-effect waves-light"
+              type="button"
+              name="action"
+              onclick="clicked()"
+            >
+              search
+              <i class="material-icons right">search</i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div id="display" class="row center"></div>
+
+      <!-- 
+      <div class="row center">
+        <div class="col s10 m7 l5">
+          <div class="card">
+            <div class="card-image center-align">
+              <img src="sunny.jpg" />
+              <h3 class="text_fix">37%</h1>
+              <i class="card-title material-icons">sunny</i>
+            </div>
+            <div class="card-content center-align">
+              <h5>Harrisburg</h5>
+              <h5>21/2/2022</h5>
+              <h5>Mostly Cloudy</h5>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="row">
+        <div class="col s12 m7 l3">
+          <div class="card">
+            <div class="card-image">
+              <img src="sunny.jpg" />
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>
+                I am a very simple card. I am good at containing small bits of
+                information. I am convenient because I require little markup to
+                use effectively.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
